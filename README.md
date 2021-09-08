@@ -30,3 +30,4 @@ An example of the command line use of RegioML:
 The results are then printed and viewable as a 2D structure with regioselective indicators (in .svg format).
 
 
+HAPPY PREDICTING :-)
