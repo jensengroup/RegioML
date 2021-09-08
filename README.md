@@ -9,6 +9,11 @@ We recommend using anaconda to install the Python 3 environment:
 
 ```conda env create -f environment.yml && conda activate regioml```
 
+Then download the binaries of xtb to the 'dep' folder:
+
+```cd dep; wget https://github.com/grimme-lab/xtb/releases/download/v6.4.1/xtb-6.4.1.tar.xz; tar -xvf xtb-6.4.1.tar.xz```
+
+
 # Usage
 
 An example of the command line use of RegioML:
