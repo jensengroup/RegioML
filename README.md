@@ -27,6 +27,6 @@ An example of the command line use of RegioML:
 
     python regioML.py -s 'c1ccc(cc1C(F)(F)F)c1cccc(n1)OC' -n 'mol-1' -o '13,11'
 
-The results are then printed and viewable by 2D structures with regioselective indicators (in .svg format).
+The results are then printed and viewable as a 2D structure with regioselective indicators (in .svg format).
 
 
