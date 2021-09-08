@@ -23,7 +23,7 @@ An example of the command line use of RegioML:
 
     # Run predictions:
 
-    python regioml.py -s 'c1(ccno1)C'
+    python regioML.py -s 'c1(ccno1)C'
 
 
     # Run predictions, specify name, and highlight the experimentally observed reaction sites (black circles):
