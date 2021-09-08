@@ -7,17 +7,7 @@ More information is available at the [RegioML paper](https://doi.org/).
 
 We recommend using anaconda to install the Python 3 environment:
 
-```conda create -c conda-forge -n regioml python=3.8.8 rdkit && conda activate regioml```
-```conda create -n regioml python=3.8.8 && conda activate sites```
-
-OR
-
-```conda create -n regioml python=3.8.8 && source activate sites```
-
-Then install dependencies
-
-```conda install -n regioml -c rdkit rdkit && conda install -n regioml pip```
-```pip install -r requirements.txt```
+```conda env create -f environment.yml && conda activate regioml```
 
 # Usage
 
