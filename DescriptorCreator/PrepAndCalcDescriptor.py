@@ -10,10 +10,10 @@ from DescriptorCreator.GraphChargeShell import GraphChargeShell
 
 # xTB path and calc setup
 path = os.getcwd()
-XTBHOME = os.path.join(path, 'dep/xtb_6.4.0')
-XTBPATH = os.path.join(path, 'dep/xtb_6.4.0/share/xtb')
-MANPATH = os.path.join(path, 'dep/xtb_6.4.0/share/man')
-LD_LIBRARY_PATH = os.path.join(path, 'dep/xtb_6.4.0/lib')
+XTBHOME = os.path.join(path, 'dep/xtb-6.4.0')
+XTBPATH = os.path.join(path, 'dep/xtb-6.4.0/share/xtb')
+MANPATH = os.path.join(path, 'dep/xtb-6.4.0/share/man')
+LD_LIBRARY_PATH = os.path.join(path, 'dep/xtb-6.4.0/lib')
 
 OMP_NUM_THREADS = '1'
 MKL_NUM_THREADS = '1'
