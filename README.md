@@ -1,7 +1,8 @@
 # RegioML
 RegioML is an atom-based machine learning model for predicting the regioselectivities of electrophilic aromatic substitution reactions. The model relies on CM5 atomic charges computed using semiempirical tight binding (GFN1-xTB) combined with the ensemble decision tree variant light gradient boosting machine (LightGBM).
 
-More information is available in the [RegioML paper](https://doi.org/).
+More information is available in the [RegioML paper](https://doi.org/). 
+Furthermore, additional code for dataset curation and machine learning training etc. are available [here](https://doi.org/).
 
 # Installation
 
