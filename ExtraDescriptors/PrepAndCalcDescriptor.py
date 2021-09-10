@@ -12,10 +12,6 @@ from locate_EAS_sites import locate_sites
 from find_atoms import find_identical_atoms
 
 # xTB path and calc setup
-# XTBHOME = '/home/Ree/anaconda/envs/latest_rdenv' #apparently this is not working for all molecules, fx. comp. with Reaction ID: 33222961 fails
-# XTBPATH = '/home/Ree/anaconda/envs/latest_rdenv/share/xtb'
-# MANPATH = '/home/Ree/anaconda/envs/latest_rdenv/share/man'
-# LD_LIBRARY_PATH = '/home/Ree/anaconda/envs/latest_rdenv/lib'
 XTBHOME = '/opt/xtb/6.4.0'
 XTBPATH = '/opt/xtb/6.4.0/share/xtb'
 MANPATH = '/opt/xtb/6.4.0/share/man'
