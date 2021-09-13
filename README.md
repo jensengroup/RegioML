@@ -8,11 +8,11 @@ Furthermore, additional code for dataset curation, descriptors, and machine lear
 
 We recommend using anaconda to install the Python 3 environment:
 
-```conda env create -f environment.yml && conda activate regioml```
+    conda env create -f environment.yml && conda activate regioml
 
 Then download the binaries of xtb version 6.4.0:
 
-```mkdir dep; cd dep; wget https://github.com/grimme-lab/xtb/releases/download/v6.4.0/xtb-210201.tar.xz; tar -xvf ./xtb-210201.tar.xz; cd ..```
+    mkdir dep; cd dep; wget https://github.com/grimme-lab/xtb/releases/download/v6.4.0/xtb-210201.tar.xz; tar -xvf ./xtb-210201.tar.xz; cd ..
 
 
 # Usage
