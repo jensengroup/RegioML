@@ -32,7 +32,7 @@ The results are then printed and viewable as a 2D structure with regioselective 
 
 The atom scores are predicted by the best LightGBM classification model from training on the entire collection of data using 10-fold cross-validation ('models/LGBM_measured_allData_final_model.txt'), where values above 50% indicates that an atom should be reactive (green circles). However, atoms with scores above 5% are also highlighted (red circles). The predicted low, medium, or high reactivity are based on the highest proton affinity within the molecule obtained by the best LightGBM regression model from training on the entire collection of data using 10-fold cross-validation ('models/LGBM_regressor_GFN1_allData_final_model.txt'). 
 
-The classification model used in the paper to obatin the results in Table 1 can be assesed using the following command line:
+The classification model used in the paper to obtain the results in Table 1 can be accessed using the following command line:
 
     python regioML.py -s 'c1(ccno1)C' -m 'models/LGBM_random_noTaut_spCM5_measured_final_best_model.txt'
 
