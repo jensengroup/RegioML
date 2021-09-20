@@ -4,6 +4,10 @@ RegioML is an atom-based machine learning model for predicting the regioselectiv
 More information is available in the [RegioML paper](https://doi.org/10.33774/chemrxiv-2021-l2fvl). 
 Furthermore, additional code for dataset curation, descriptors, and machine learning etc. are available [here](https://sid.erda.dk/sharelink/HypB1igzDl).
 
+<a href="https://t.co/49hfVKuklb?amp=1">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Try RegioML In Colab"/>
+</a>
+
 # Installation
 
 We recommend using anaconda to install the Python 3 environment:
@@ -13,7 +17,6 @@ We recommend using anaconda to install the Python 3 environment:
 Then download the binaries of xtb version 6.4.0:
 
     mkdir dep; cd dep; wget https://github.com/grimme-lab/xtb/releases/download/v6.4.0/xtb-210201.tar.xz; tar -xvf ./xtb-210201.tar.xz; cd ..
-
 
 # Usage
 
