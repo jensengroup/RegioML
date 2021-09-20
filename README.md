@@ -5,7 +5,7 @@ More information is available in the [RegioML paper](https://doi.org/10.33774/ch
 Furthermore, additional code for dataset curation, descriptors, and machine learning etc. are available [here](https://sid.erda.dk/sharelink/HypB1igzDl).
 
 <a href="https://t.co/49hfVKuklb?amp=1">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Try RegioML In Colab"/>
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
 # Installation
