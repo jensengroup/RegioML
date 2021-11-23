@@ -62,7 +62,7 @@ class EASMolPreparation():
     def generate_3Dxyz(self, smi, name):
 
         # Smiles to RDKit mol object
-        self.rdkit_mol = Chem.MolFromSmiles(smi)
+        self.rdkit_mol = Chem.MolFromSmiles(Chem.MolToSmiles(Chem.MolFromSmiles(smi), isomericSmiles=True))
         self.rdkit_mol = Chem.AddHs(self.rdkit_mol)
 
         # Embed mol object to get cartesian coordinates
