@@ -1,6 +1,7 @@
 import numpy as np
 import argparse
 
+from rdkit import Chem
 import lightgbm as lgb
 
 # from DescriptorCreator.find_atoms import find_identical_atoms
@@ -29,14 +30,15 @@ if __name__ == "__main__":
     predictor = EASMolPreparation()
     des =('GraphChargeShell', {'charge_type': 'cm5', 'n_shells': 5, 'use_cip_sort': True})
     final_model = lgb.Booster(model_file=args.model)
-
-    cm5_list = predictor.calc_CM5_charges(args.smiles, name=args.name, optimize=False, save_output=True)
+    
+    smiles = Chem.MolToSmiles(Chem.MolFromSmiles(args.smiles), isomericSmiles=True) # canonicalize input smiles
+    cm5_list = predictor.calc_CM5_charges(smiles, name=args.name, optimize=False, save_output=True)
     atom_indices, descriptor_vector = predictor.create_descriptor_vector(des[0], **des[1])
 
     pred_proba = final_model.predict(descriptor_vector, num_iteration=final_model.best_iteration)
     pred = np.rint(pred_proba)
 
-    print('SMILES:', args.smiles)
+    print('SMILES:', smiles)
     print('Atom indices:', atom_indices)
     print('Pred. probabilities:', pred_proba)
     print('Predictions:', pred)
@@ -62,7 +64,7 @@ if __name__ == "__main__":
     print('Proton affinities:', list(map(int, PA_preds)))
     
     # Draw molecule
-    result_svg = molsvg.generate_structure(args.smiles, [args.smiles], [reactivity_label], [pred_proba.tolist()], [atom_indices], args.observed)
+    result_svg = molsvg.generate_structure(smiles, [smiles], [reactivity_label], [pred_proba.tolist()], [atom_indices], args.observed)
     f_draw = open(f'{args.name}.svg','w')
     f_draw.write(result_svg)
     f_draw.close()
