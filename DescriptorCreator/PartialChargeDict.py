@@ -1,9 +1,14 @@
 __author__ = 'modlab'
 
-import collections
+import sys
+import collections 
+if sys.version_info.major == 3 and sys.version_info.minor >= 10:
+    from collections.abc import MutableMapping
+else:
+    from collections import MutableMapping
 
 
-class PartialChargeDict(collections.MutableMapping):
+class PartialChargeDict(MutableMapping):
     """ Dictionary Decorator to store Partial Charges
 
     Class internally stores an OrderedDict with different
